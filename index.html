@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>random password generator</h2>
+            <input type="text" id="screen" readonly='' placeholder="your password">
+            <div class="input_section">
+                <div class="length_section">
+                    <label for="length_of_password" class="length_of_password">Length : </label>
+                    <input type="text" id="length_of_password">
+                </div>
+                <div class="check">
+                    <div class="number_section check_box ">
+                        <label for="number" class="number">numbers : </label>
+                        <input type="checkbox" id="number">
+                    </div>
+                    <div class="lowercase_section check_box">
+                        <label for="lowercase" class="lowercase">lowercase : </label>
+                        <input type="checkbox" id="lowercase">
+                    </div>
+                    <div class="uppercase_section check_box">
+                        <label for="uppercase" class="uppercase">uppercase : </label>
+                        <input type="checkbox" id="uppercase">
+                    </div>
+                    <div class="symbols_section check_box">
+                        <label for="symbols" class="symbols">symbols : </label>
+                        <input type="checkbox" id="symbols">
+                    </div>
+                    <div class="btn">
+                        <button id="password" onclick="generate_password()">Generate Password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
